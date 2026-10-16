@@ -1,0 +1,822 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://jsdelivr.net');
+
+p {margin: 0; padding: 0; width: fit-content; height: fit-content;}
+body, html, hr {padding: 0; margin: 0; width: 100%;}
+div {width: fit-content; height: fit-content;}
+body {box-sizing: border-box}
+
+.Hero
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 750px;
+    width: 100%;
+    gap: 50px;
+    z-index: 1;
+}
+.Hero::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("hero_backgr.png");
+    background-size: cover; 
+    background-position: center;
+    opacity: 0.02;
+    z-index: -1;
+}
+.Hero .Header
+{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 18px 48px;
+    box-sizing: border-box;
+}
+.Hero .Shadepro
+{
+    color: rgba(22, 28, 45, 1);
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: -0.16px;
+}
+.Hero .DemosPagesSupport-Button
+{
+    display: flex;
+    align-items: center;
+    gap: 43px;
+}
+.Hero .DemosPagesSupport
+{
+    display: flex;
+    width: 333px;
+    justify-content: space-between;
+}
+.Hero .Header .text
+{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: -0.1px;
+    text-align: right;
+    text-decoration: none;
+}
+.Hero .Header .Button
+{
+    background: rgba(71, 59, 240, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 168px;
+    height: 45px;
+    border-radius: 8px;
+}
+.Hero .Button p
+{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+.Hero .Content-BG
+{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 203px;
+}
+.Hero .Content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 475px;
+    height: 362px;
+}
+.Hero .Content .title
+{
+    color: rgba(22, 28, 45, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -1.8px;
+}
+.Hero .Content .body
+{
+    color: rgba(22, 28, 45, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    opacity: 0.7;
+}
+.Hero .Content .Button
+{
+    background: rgba(71, 59, 240, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+    border-radius: 8px;
+}
+.Hero .Content .Button p
+{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    text-align: center;
+}
+.Hero .Content .video
+{
+    color: rgba(22, 28, 45, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 1.63px;
+    text-transform: uppercase;
+    text-indent: 28px;
+}
+.Hero .BG
+{
+    position: relative;
+    top: 36px;
+}
+.Alert
+{
+    background: rgba(22, 28, 45, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 96px;
+}
+.Alert .Icon-Text
+{
+    display: flex;
+    gap: 10px;
+}
+.Alert .icon
+{
+    width: 22px;
+    height: 22px;
+}
+.Alert .text
+{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px;
+    letter-spacing: -0.2px;
+}
+.Alert .link
+{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px;
+    letter-spacing: -0.2px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+.Content01
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 660px;
+}
+.Content01 .Content
+{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.Content01 .Contentleft
+{
+    display: flex;
+    flex-direction: column;
+}
+.Content01 .title
+{
+    color: rgba(22, 28, 45, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: -1.2px;
+}
+.Content01 .body
+{
+    color: rgba(22, 28, 45, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    opacity: 0.7;
+}
+.Content .Contentleft .body
+{
+    margin-top: 25px;
+}
+.Content01 .Button
+{
+    background: rgba(71, 59, 240, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 203px;
+    height: 50px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+.Content01 .Button p
+{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    text-align: center;
+}
+.Content01 .IMG
+{
+    width: 308px;
+    height: 419px;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+}
+.Content01 .Contentright
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Content01 .Box
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Services
+{
+    background: rgba(244, 247, 250, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 770px;
+}
+.Services .Box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 62px;
+}
+.Services .Title
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+.Services .Title .title
+{
+    color: rgba(22, 28, 45, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -1.2px;
+    text-align: center;
+}
+.Services .Title .body
+{
+    color: rgba(22, 28, 45, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    text-align: center;
+    opacity: 0.7;
+}
+.Services .List
+{
+    display: flex;
+    gap: 30px;
+}
+.Services .Tab
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 378px;
+}
+.Services .List .title
+{
+    color: rgba(22, 28, 45, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+}
+.Services .List .img
+{
+    border: 1px solid rgba(231, 233, 237, 1);
+    width: 350px;
+    height: 165px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.Services .List .body
+{
+    color: rgba(22, 28, 45, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px;
+    letter-spacing: -0.2px;
+    opacity: 0.7;
+}
+.Services .Button
+{
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    width: fit-content;
+    height: fit-content;
+}
+.Services .Button p
+{
+    color: rgba(71, 59, 240, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+}
+.Services .Button img
+{
+    width: 12px;
+    height: 10px;
+}
+.Content02
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 555px;
+    gap: 165px;
+    overflow: hidden;
+}
+.Content02 .IMAGE
+{
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 555px;
+}
+.Content02 .img1
+{
+    position: absolute;
+    background: rgba(104, 213, 133, 1);
+    width: 312px;
+    height: 312px;
+    border-radius: 50%;
+    z-index: 1;
+    top: 160px;
+    left: 0;
+}
+.Content02 .img2
+{
+    position: absolute;
+    object-fit: cover;
+    object-position: top;
+    width: 390px;
+    height: 745px;
+    transform: rotateY(-180deg);
+    z-index: 2;
+    top: 70px;
+    left: 0;
+}
+.Content02 .ContentRight
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 345px;
+}
+.Content02 .title
+{
+    color: rgba(22, 28, 45, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -1.2px;
+
+}
+.Content02 .body
+{
+    color: rgba(22, 28, 45, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    opacity: 0.7;
+}
+.Content02 .text
+{
+    color: rgba(22, 28, 45, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -1.2px;
+}
+.Content02 .Box
+{
+    display: flex;
+    gap: 62px;
+}
+.Content02 .Left, .Right
+{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.Content02 .Icon
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.Content02 .icon
+{
+    width: 18px;
+    height: 12px;
+}
+.Content02 .text
+{
+    color: rgba(22, 28, 45, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+}
+.Video
+{
+    background-color: rgba(22, 28, 45, 1);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 580px;
+    gap: 24px;
+    z-index: 1;
+}
+.Video::before
+{
+    content: "";
+    position: absolute;
+    background-image: url("video_Image.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.51;
+}
+.Video .Box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.Video .Button
+{
+    background: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+}
+.Video .Button img
+{
+    width: 12px;
+    height: 12px;
+}
+.Video .Text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.Video .title
+{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -1.2px;
+    text-align: center;
+}
+.Video .body
+{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    text-align: center;
+    opacity: 0.65;
+}
+.Testimonial
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 743px;
+}
+.Testimonial .Box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+}
+.Testimonial .Title
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+.Testimonial .title
+{
+    color: rgba(22, 28, 45, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -1.2px;
+    text-align: center;
+}
+.Testimonial .body
+{
+    color: rgba(22, 28, 45, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    text-align: center;
+    opacity: 0.7;
+}
+.Testimonial .Content
+{
+    display: flex;
+    gap: 30px;
+}
+.Testimonial .Tab
+{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-around;
+    border: 1px solid rgba(231, 233, 237, 1);
+    width: 350px;
+    height: 352px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 34px ;
+}
+.Testimonial .avatar
+{
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Testimonial .text
+{
+    color: rgba(22, 28, 45, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+}
+.Testimonial .Name-Job
+{
+    display: flex;
+    gap: 30px;
+}
+.Testimonial .name
+{
+    color: rgba(22, 28, 45, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 29px;
+    letter-spacing: -0.2px;
+}
+.Testimonial .job
+{
+    color: rgba(22, 28, 45, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px;
+    letter-spacing: -0.2px;
+    opacity: 0.7;
+}
+.CTA
+{
+    background: rgba(104, 213, 133, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 170px;
+}
+.CTA .Box
+{
+    display: flex;
+    gap: 35px;
+}
+.CTA .title
+{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: -1.2px;
+    text-align: right;
+}
+.CTA .Button
+{
+    background: rgba(255, 255, 255, 1);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+}
+.CTA .Button p
+{
+    color: rgba(22, 28, 45, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    text-align: center;
+}
+.Footer
+{
+    background: rgba(22, 28, 45, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+}
+.Footer .Box
+{
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+}
+.Footer .Media
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 210px;
+}
+.Footer .Media .title
+{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: -0.16px;
+}
+.Footer .Media .body
+{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: -0.1px;
+    opacity: 0.65;
+}
+.Footer .Media .Social
+{
+    display: flex;
+    gap: 24px;
+}
+.Footer .fab .fa-twitter
+{
+    width: 17px;
+    height: 15px;
+}
+.Footer .fa-facebook-square
+{
+    width: 18px;
+    height: 18px;
+}
+.Footer .fab .fa-instagram
+{
+    width: 18px;
+    height: 18px;
+}
+.Footer .fab .fa-linkedin
+{
+    width: 18px;
+    height: 18px;
+}
+.Footer .Conpany-Product-Sevices-Legal
+{
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+.Footer .Rights
+{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    gap: 20px;
+}
+.Footer .Conpany-Product-Sevices-Legal .title
+{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: -0.1px;
+    opacity: 0.65;
+}
+.Footer .Text
+{
+    display: flex;
+    flex-direction: column;
+}
+.Footer .Conpany-Product-Sevices-Legal .text
+{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 40px;
+    letter-spacing: -0.2px;
+    text-decoration: none;
+}
